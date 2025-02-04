@@ -50,8 +50,7 @@ class Tachometer:
     def get_rpm(self):
         return self.rpm
     
-    def stop(self):
+    def deinit(self):
         self.timer.deinit()
         self.sm.active(0)  # Stop PIO state machine
-
 
